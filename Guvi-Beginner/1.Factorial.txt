@@ -1,0 +1,27 @@
+1.Factorial
+You are provided with a number, "N". Find its factorial.
+
+Input Description:
+A positive integer is provided as an input.
+
+Output Description:
+Print the factorial of the integer.
+
+Sample Input :
+2
+Sample Output :
+2
+
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        int userInput = obj.nextInt();
+        int fact=1;
+        for(int i=userInput;i>1;i--){
+            fact*=i;
+        }
+        System.out.println(fact);
+    }
+}
