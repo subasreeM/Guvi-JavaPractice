@@ -1,0 +1,22 @@
+You are given with a number "N", find its cube.
+
+Input Description:
+A positive integer is provided.
+
+Output Description:
+Find the cube of the number.
+
+Sample Input :
+2
+Sample Output :
+8
+import java.util.Scanner;
+import java.lang.Math;
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner obj = new Scanner(System.in);
+        int a = obj.nextInt();
+        System.out.println(Math.pow(a,3));
+    }
+}
