@@ -1,0 +1,35 @@
+You will be provided with a number. Print the number of days in the month corresponding to that number.
+
+Note: In case the input is February, print 28 days. If the Input is not in valid range print "Error".
+
+Input Description:
+The input is in the form of a number.
+
+Output Description:
+Find the days in the month corresponding to the input number. Print Error if the input is not in a valid range.
+
+Sample Input :
+8
+Sample Output :
+31
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner j = new Scanner(System.in);
+        int a= j.nextInt();
+         if((a==1)||(a==3)||(a==5)||(a==7)||(a==8)||(a==10)||(a==12)) {
+        	System.out.println(31);
+        }
+        else if((a==4)||(a==6)||(a==9)||(a==11)) {
+        	System.out.println(30);
+        }
+        else if(a==2) {
+        	System.out.println(28);
+        }
+        else {
+        	System.out.println("Error");
+        }
+    }
+}
