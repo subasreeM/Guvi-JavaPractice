@@ -1,0 +1,25 @@
+Let "A"  be a string. Remove all the whitespaces and find it's length.
+
+Input Description:
+A string is provide as an input
+
+Output Description:
+Remove all the whitespaces and then print the length of the remaining string.
+
+Sample Input :
+Lorem Ipsum
+Sample Output :
+10
+
+
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner obj = new Scanner(System.in);
+        String s=obj.nextLine();
+         String s1=s.replace(" ", "");
+         System.out.println(s1.length());
+        
+    }
+}
